@@ -1,0 +1,24 @@
+import psycopg2
+
+def connect_to_db():
+    try:
+        # Connect to your postgres DB
+        conexion = psycopg2.connect("dbname=test_db user=postgres password=admin host=localhost port=5432")
+        print("Conexión exitosa a la base de datos")   
+        return conexion
+    except Exception as e:
+        print(f"Error al conectar a la base de datos: {e}")
+        return None 
+    
+print("Conectando a la base de datos...")
+conexion = connect_to_db()
+
+cursor= conexion.cursor() 
+sentencia_sql = "SELECT * FROM persona"
+cursor.execute(sentencia_sql)
+resultados = cursor.fetchall()
+print("Resultados de la consulta:")
+for fila in resultados:
+    print(fila)
+cursor.close()
+conexion.close()
