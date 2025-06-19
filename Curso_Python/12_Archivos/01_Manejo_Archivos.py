@@ -1,5 +1,5 @@
 try:
-    archivo=open('\\home\\user\\cursopython\\Curso_Python\\12_Archivos\\prueba.txt','w',encoding='utf8')      #
+    archivo=open('//home//user//cursopython//Curso_Python//12_Archivos//prueba.txt','w',encoding='utf8')      #
     
     archivo.write('Esto es una prueba\n')
     archivo.write('Está es una prueba\n')
