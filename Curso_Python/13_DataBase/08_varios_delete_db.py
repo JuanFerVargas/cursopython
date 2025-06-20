@@ -11,8 +11,16 @@ def connect_to_db():
         return None 
     
 print("Conectando a la base de datos...")
+conexion = connect_to_db()
 try:
-    conexion = connect_to_db()
+    with conexion:
+        with conexion.cursor()  as cursor:
+            sentencia_sql = "DELETE FROM PERSONA WHERE ID_PERSONA IN %s"
+            entrada = input("Ingrese los IDs de la persona a eliminar (Separada por coma): ")
+            valores = (tuple(entrada.split(',')),)  
+            cursor.execute(sentencia_sql, valores)
+            registros_eliminados = cursor.rowcount  # Obtiene el número de registros afectados
+            print("Número de registros Eliminados:", registros_eliminados)
 except Exception as e:
     print(f"Error al ejecutar la consulta: {e}")
 finally:

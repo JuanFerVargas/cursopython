@@ -11,8 +11,15 @@ def connect_to_db():
         return None 
     
 print("Conectando a la base de datos...")
+conexion = connect_to_db()
 try:
-    conexion = connect_to_db()
+    with conexion:
+        with conexion.cursor()  as cursor:
+            sentencia_sql = "UPDATE PERSONA SET NOMBRE = %s, APELLIDO = %s, EMAIL = %s WHERE ID_PERSONA = %s"
+            valores = ('Juan Carlos', 'Juarez', 'jcjuarez@mail.com','5')  
+            cursor.execute(sentencia_sql, valores)
+            registros_actualizados = cursor.rowcount  # Obtiene el número de registros afectados
+            print("Número de registros actualizados:", registros_actualizados)
 except Exception as e:
     print(f"Error al ejecutar la consulta: {e}")
 finally:

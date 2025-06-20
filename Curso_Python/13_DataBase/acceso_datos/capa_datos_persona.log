@@ -1,0 +1,14 @@
+2025-06-19 21:56:20 - root - DEBUG - [logger_base.py:20]- Mensaje de depuración
+2025-06-19 21:56:20 - root - INFO - [logger_base.py:21]- Mensaje informativo
+2025-06-19 21:56:20 - root - WARNING - [logger_base.py:22]- Mensaje de advertencia
+2025-06-19 21:56:20 - root - ERROR - [logger_base.py:23]- Mensaje de error
+2025-06-19 21:56:20 - root - CRITICAL - [logger_base.py:24]- Mensaje crítico
+2025-06-19 21:58:57 - root - DEBUG - [persona.py:50]- Id Persona: 1, Nombre: Juan, Apellido: Perez, Email: jperez@mail.com
+2025-06-19 21:58:57 - root - DEBUG - [persona.py:53]- Id Persona: None, Nombre: Juan, Apellido: Perez, Email: jperez@mail.com
+2025-06-19 21:58:57 - root - DEBUG - [persona.py:56]- Id Persona: 1, Nombre: None, Apellido: None, Email: None
+2025-06-19 22:00:46 - root - DEBUG - [persona.py:49]- Id Persona: 1, Nombre: Juan, Apellido: Perez, Email: jperez@mail.com
+2025-06-19 22:00:46 - root - DEBUG - [persona.py:52]- Id Persona: None, Nombre: Juan, Apellido: Perez, Email: jperez@mail.com
+2025-06-19 22:00:46 - root - DEBUG - [persona.py:55]- Id Persona: 1, Nombre: None, Apellido: None, Email: None
+2025-06-19 22:00:50 - root - DEBUG - [persona.py:49]- Id Persona: 1, Nombre: Juan, Apellido: Perez, Email: jperez@mail.com
+2025-06-19 22:00:50 - root - DEBUG - [persona.py:52]- Id Persona: None, Nombre: Juan, Apellido: Perez, Email: jperez@mail.com
+2025-06-19 22:00:50 - root - DEBUG - [persona.py:55]- Id Persona: 1, Nombre: None, Apellido: None, Email: None
