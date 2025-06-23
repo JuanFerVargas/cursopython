@@ -1,0 +1,3 @@
+2025-06-23 20:05:24 - root - DEBUG - [persona.py:47]- Id Persona: 1, Nombre: Juan,Apellido: Perez, Email: jperez@mail.com
+2025-06-23 20:05:24 - root - DEBUG - [persona.py:50]- Id Persona: None, Nombre: Juan,Apellido: Perez, Email: jperez@mail.com
+2025-06-23 20:05:24 - root - DEBUG - [persona.py:53]- Id Persona: 1, Nombre: None,Apellido: None, Email: None
