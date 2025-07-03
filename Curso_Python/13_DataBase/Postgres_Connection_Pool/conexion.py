@@ -1,21 +1,25 @@
 from logger_base import log
 from psycopg2 import pool
-
+from os import sys
 
 class Conexion:
-    _pool = ConnectionPool(
-        conninfo="host=127.0.0.1 port=5432 dbname=test_db user=postgres password=admin",
-        min_size=1,
-        max_size=5,
-        timeout=5
-    )
+
+    _DATABASE = 'test_db'
+    _USER = 'postgres'
+    _PASSWORD = 'admin'
+    _HOST = '127.0.0.1'
+    _PORT = '5432'
+    _MIN_CON=1
+    _MAX_CON=5
+    _pool = None
 
     @classmethod
-    def obtener_pool(cls):
+    def obtenerPool(cls):
         if cls._pool is None:
             try:
-                cls._pool = pool.SimpleConnectionPool(cls.min_size,cls.max_size, host=cls.host, port=cls.port, dbname=cls.dbname, user=cls.user, password=cls.password)
+                cls._pool = pool.SimpleConnectionPool(cls._MIN_CON,cls._MAX_CON, host=cls._HOST, port=cls._PORT, dbname=cls._DATABASE, user=cls._USER, password=cls._PASSWORD)
                 log.debug(f'Pool de conexiones creado: id={id(cls._pool)}')
+                log.debug(f'Creación del Pool exitosa: {cls._pool}')
             except Exception as e:
                 log.error(f'Ocurrió un error al crear el pool de conexiones: {e}')
                 sys.exit()
@@ -24,32 +28,48 @@ class Conexion:
         return cls._pool
 
     @classmethod
-    def obtener_conexion(cls):
-        conexion = cls._pool.getconn()
-        log.debug(f'Conexión obtenida del pool: id={id(conexion)}')
+    def obtenerConexion(cls):
+        conexion = cls.obtenerPool().getconn()
+        log.debug(f'Conexión obtenida del pool: {conexion}')
         return conexion
 
     @classmethod
-    def liberar_conexion(cls, conexion):
-        cls._pool.putconn(conexion)
-        log.debug(f'Conexión liberada al pool: id={id(conexion)}')
+    def liberarConexion(cls, conexion):
+        cls.obtenerPool().putconn(conexion)
+        log.debug(f'Regresamos la conexion al pool: id={id(conexion)}')
 
     @classmethod
-    def cerrar_conexion(cls):
-        cls._pool.closeall()
+    def cerrarConexion(cls):
+        cls.obtenerPool().closeall()
         log.debug('Pool de conexiones cerrado.')
 
 if __name__ == '__main__':
-    Conexion._pool.check()
-    log.debug('Pool de conexiones verificado correctamente.')
 
-    # Caso con with, donde se reutilizan las conexiones
-    for i in range(10):  # Pide 10 conexiones, pero se liberan automáticamente
-        with Conexion.obtener_conexion() as conexion:
-            log.debug(f'Conexión #{i + 1} abierta y cerrada: id={id(conexion)}')
+    conexion1=Conexion.obtenerConexion()
+    conexion1=Conexion.liberarConexion(conexion1)
 
-    Conexion._pool.close()
-    log.debug('Pool de conexiones cerrado correctamente.')
+    conexion2=Conexion.obtenerConexion()
+    conexion2=Conexion.liberarConexion(conexion2)
 
-    # Las conexiones de liberar de manera automatica al user with
-    # y el metodo _pool.connection()
+    conexion3=Conexion.obtenerConexion()
+    conexion3=Conexion.liberarConexion(conexion3)
+
+    conexion4=Conexion.obtenerConexion()
+    conexion4=Conexion.liberarConexion(conexion4)
+
+    conexion5=Conexion.obtenerConexion()
+    conexion5=Conexion.liberarConexion(conexion5)
+
+    conexion6=Conexion.obtenerConexion()
+    conexion6=Conexion.liberarConexion(conexion6)
+
+    conexion7=Conexion.obtenerConexion()
+    conexion8=Conexion.obtenerConexion()
+    conexion9=Conexion.obtenerConexion()
+    conexion10=Conexion.obtenerConexion()
+    conexion11=Conexion.obtenerConexion()
+
+
+
+    
+
