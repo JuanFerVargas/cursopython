@@ -2,7 +2,7 @@ import logging as log
 import os
 
 # Asegura que la ruta exista
-log_dir = os.path.join('Curso_Python', '13_DataBase', 'acceso_datos')
+log_dir = os.path.join('Curso_Python', '13_DataBase_Postgres', 'acceso_datos')
 os.makedirs(log_dir, exist_ok=True)
 log_file = os.path.join(log_dir, 'capa_datos_persona.log')
 
