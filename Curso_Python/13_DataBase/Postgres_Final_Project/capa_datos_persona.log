@@ -1,0 +1,144 @@
+2025-07-07 19:03:43 - root - DEBUG - [logger_base.py:20]- Mensaje a nivel debug
+2025-07-07 19:03:43 - root - INFO - [logger_base.py:21]- Mensaje a nivel info
+2025-07-07 19:03:43 - root - WARNING - [logger_base.py:22]- Mensaje a nivel de warning
+2025-07-07 19:03:43 - root - ERROR - [logger_base.py:23]- Mensaje a nivel de error
+2025-07-07 19:03:43 - root - CRITICAL - [logger_base.py:24]- Mensaje a nivel critico
+2025-07-07 20:39:58 - root - DEBUG - [cursor_del_pool.py:10]- Inicio del metodo with __enter__
+2025-07-07 20:39:58 - root - ERROR - [conexion.py:24]- Ocurrió un error al crear el pool de conexiones: 'utf-8' codec can't decode byte 0xab in position 90: invalid start byte
+2025-07-07 20:41:11 - root - DEBUG - [conexion.py:21]- Pool de conexiones creado: id=2381213189648
+2025-07-07 20:41:11 - root - DEBUG - [conexion.py:22]- Creación del Pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000022A6B5DC610>
+2025-07-07 20:41:11 - root - DEBUG - [conexion.py:33]- Conexión obtenida del pool: <connection object at 0x0000022A6B518AE0; dsn: 'user=postgres password=xxx dbname=postgres host=127.0.0.1 port=5432', closed: 0>
+2025-07-07 20:41:11 - root - DEBUG - [conexion.py:27]- Pool de conexiones ya creado: id=2381213189648
+2025-07-07 20:41:11 - root - DEBUG - [conexion.py:39]- Regresamos la conexion al pool: id=2381212388064
+2025-07-07 20:41:24 - root - DEBUG - [cursor_del_pool.py:10]- Inicio del metodo with __enter__
+2025-07-07 20:41:24 - root - DEBUG - [conexion.py:21]- Pool de conexiones creado: id=1591918885648
+2025-07-07 20:41:24 - root - DEBUG - [conexion.py:22]- Creación del Pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000172A5C27B10>
+2025-07-07 20:41:24 - root - DEBUG - [conexion.py:33]- Conexión obtenida del pool: <connection object at 0x00000172A5C2E020; dsn: 'user=postgres password=xxx dbname=postgres host=127.0.0.1 port=5432', closed: 0>
+2025-07-07 20:41:24 - __main__ - DEBUG - [usuario_DAO.py:19]- Seleccionando usuarios
+2025-07-07 20:41:24 - root - DEBUG - [cursor_del_pool.py:16]- Se ejecuta metodo __exit__
+2025-07-07 20:41:24 - root - ERROR - [cursor_del_pool.py:19]- Ocurrio una excepcion, se hace rollback: no existe la relación «usuarios»
+2025-07-07 20:41:24 - root - DEBUG - [conexion.py:27]- Pool de conexiones ya creado: id=1591918885648
+2025-07-07 20:41:24 - root - DEBUG - [conexion.py:39]- Regresamos la conexion al pool: id=1591918911520
+2025-07-07 20:42:40 - root - DEBUG - [cursor_del_pool.py:10]- Inicio del metodo with __enter__
+2025-07-07 20:42:40 - root - DEBUG - [conexion.py:21]- Pool de conexiones creado: id=2726804124304
+2025-07-07 20:42:40 - root - DEBUG - [conexion.py:22]- Creación del Pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000027AE230F290>
+2025-07-07 20:42:40 - root - DEBUG - [conexion.py:33]- Conexión obtenida del pool: <connection object at 0x0000027AE236E020; dsn: 'user=postgres password=xxx dbname=postgres host=127.0.0.1 port=5432', closed: 0>
+2025-07-07 20:42:40 - __main__ - DEBUG - [usuario_DAO.py:19]- Seleccionando usuarios
+2025-07-07 20:42:40 - root - DEBUG - [cursor_del_pool.py:16]- Se ejecuta metodo __exit__
+2025-07-07 20:42:40 - root - ERROR - [cursor_del_pool.py:19]- Ocurrio una excepcion, se hace rollback: no existe la relación «usuarios»
+2025-07-07 20:42:40 - root - DEBUG - [conexion.py:27]- Pool de conexiones ya creado: id=2726804124304
+2025-07-07 20:42:40 - root - DEBUG - [conexion.py:39]- Regresamos la conexion al pool: id=2726804512800
+2025-07-07 20:43:21 - root - DEBUG - [cursor_del_pool.py:10]- Inicio del metodo with __enter__
+2025-07-07 20:43:21 - root - DEBUG - [conexion.py:21]- Pool de conexiones creado: id=2166796016144
+2025-07-07 20:43:21 - root - DEBUG - [conexion.py:22]- Creación del Pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001F87F1B5A10>
+2025-07-07 20:43:21 - root - DEBUG - [conexion.py:33]- Conexión obtenida del pool: <connection object at 0x000001F87F25E130; dsn: 'user=postgres password=xxx dbname=postgres host=127.0.0.1 port=5432', closed: 0>
+2025-07-07 20:43:21 - __main__ - DEBUG - [usuario_DAO.py:31]- Usuario a Insertar: ID: None, Username: noname, Password: 12456
+2025-07-07 20:43:21 - root - DEBUG - [cursor_del_pool.py:16]- Se ejecuta metodo __exit__
+2025-07-07 20:43:21 - root - ERROR - [cursor_del_pool.py:19]- Ocurrio una excepcion, se hace rollback: no existe la relación «usuarios»
+2025-07-07 20:43:21 - root - DEBUG - [conexion.py:27]- Pool de conexiones ya creado: id=2166796016144
+2025-07-07 20:43:21 - root - DEBUG - [conexion.py:39]- Regresamos la conexion al pool: id=2166796706096
+2025-07-07 20:43:50 - root - DEBUG - [cursor_del_pool.py:10]- Inicio del metodo with __enter__
+2025-07-07 20:43:50 - root - DEBUG - [conexion.py:21]- Pool de conexiones creado: id=1609114868240
+2025-07-07 20:43:50 - root - DEBUG - [conexion.py:22]- Creación del Pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000176A6B85A10>
+2025-07-07 20:43:50 - root - DEBUG - [conexion.py:33]- Conexión obtenida del pool: <connection object at 0x00000176A6C0E130; dsn: 'user=postgres password=xxx dbname=postgres host=127.0.0.1 port=5432', closed: 0>
+2025-07-07 20:43:50 - __main__ - DEBUG - [usuario_DAO.py:31]- Usuario a Insertar: ID: None, Username: noname, Password: 12456
+2025-07-07 20:43:50 - root - DEBUG - [cursor_del_pool.py:16]- Se ejecuta metodo __exit__
+2025-07-07 20:43:50 - root - DEBUG - [cursor_del_pool.py:22]- Commit de la transaccion
+2025-07-07 20:43:50 - root - DEBUG - [conexion.py:27]- Pool de conexiones ya creado: id=1609114868240
+2025-07-07 20:43:50 - root - DEBUG - [conexion.py:39]- Regresamos la conexion al pool: id=1609115427120
+2025-07-07 20:44:33 - root - DEBUG - [cursor_del_pool.py:10]- Inicio del metodo with __enter__
+2025-07-07 20:44:34 - root - DEBUG - [conexion.py:21]- Pool de conexiones creado: id=1759517688720
+2025-07-07 20:44:34 - root - DEBUG - [conexion.py:22]- Creación del Pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000199AB6D4390>
+2025-07-07 20:44:34 - root - DEBUG - [conexion.py:33]- Conexión obtenida del pool: <connection object at 0x00000199ABA5E130; dsn: 'user=postgres password=xxx dbname=postgres host=127.0.0.1 port=5432', closed: 0>
+2025-07-07 20:44:34 - __main__ - DEBUG - [usuario_DAO.py:31]- Usuario a Insertar: ID: None, Username: admin1, Password: 12456
+2025-07-07 20:44:34 - root - DEBUG - [cursor_del_pool.py:16]- Se ejecuta metodo __exit__
+2025-07-07 20:44:34 - root - DEBUG - [cursor_del_pool.py:22]- Commit de la transaccion
+2025-07-07 20:44:34 - root - DEBUG - [conexion.py:27]- Pool de conexiones ya creado: id=1759517688720
+2025-07-07 20:44:34 - root - DEBUG - [conexion.py:39]- Regresamos la conexion al pool: id=1759521399088
+2025-07-07 20:44:34 - root - DEBUG - [cursor_del_pool.py:10]- Inicio del metodo with __enter__
+2025-07-07 20:44:34 - root - DEBUG - [conexion.py:27]- Pool de conexiones ya creado: id=1759517688720
+2025-07-07 20:44:34 - root - DEBUG - [conexion.py:33]- Conexión obtenida del pool: <connection object at 0x00000199ABA5E130; dsn: 'user=postgres password=xxx dbname=postgres host=127.0.0.1 port=5432', closed: 0>
+2025-07-07 20:44:34 - __main__ - DEBUG - [usuario_DAO.py:39]- Usuario a Actualizar: ID: 1, Username: siname, Password: 87654
+2025-07-07 20:44:34 - root - DEBUG - [cursor_del_pool.py:16]- Se ejecuta metodo __exit__
+2025-07-07 20:44:34 - root - DEBUG - [cursor_del_pool.py:22]- Commit de la transaccion
+2025-07-07 20:44:34 - root - DEBUG - [conexion.py:27]- Pool de conexiones ya creado: id=1759517688720
+2025-07-07 20:44:34 - root - DEBUG - [conexion.py:39]- Regresamos la conexion al pool: id=1759521399088
+2025-07-07 20:45:48 - root - DEBUG - [cursor_del_pool.py:10]- Inicio del metodo with __enter__
+2025-07-07 20:45:48 - root - DEBUG - [conexion.py:21]- Pool de conexiones creado: id=2886307213968
+2025-07-07 20:45:48 - root - DEBUG - [conexion.py:22]- Creación del Pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000002A00550F290>
+2025-07-07 20:45:48 - root - DEBUG - [conexion.py:33]- Conexión obtenida del pool: <connection object at 0x000002A00551E020; dsn: 'user=postgres password=xxx dbname=postgres host=127.0.0.1 port=5432', closed: 0>
+2025-07-07 20:45:48 - __main__ - DEBUG - [usuario_DAO.py:19]- Seleccionando usuarios
+2025-07-07 20:45:48 - root - DEBUG - [cursor_del_pool.py:16]- Se ejecuta metodo __exit__
+2025-07-07 20:45:48 - root - ERROR - [cursor_del_pool.py:19]- Ocurrio una excepcion, se hace rollback: cannot access local variable 'usuario' where it is not associated with a value <class 'UnboundLocalError'> <traceback object at 0x000002A005604980>
+2025-07-07 20:45:48 - root - DEBUG - [conexion.py:27]- Pool de conexiones ya creado: id=2886307213968
+2025-07-07 20:45:48 - root - DEBUG - [conexion.py:39]- Regresamos la conexion al pool: id=2886307274784
+2025-07-07 20:46:17 - root - DEBUG - [cursor_del_pool.py:10]- Inicio del metodo with __enter__
+2025-07-07 20:46:17 - root - DEBUG - [conexion.py:21]- Pool de conexiones creado: id=2235321545360
+2025-07-07 20:46:17 - root - DEBUG - [conexion.py:22]- Creación del Pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000208738BF290>
+2025-07-07 20:46:17 - root - DEBUG - [conexion.py:33]- Conexión obtenida del pool: <connection object at 0x00000208738CE020; dsn: 'user=postgres password=xxx dbname=postgres host=127.0.0.1 port=5432', closed: 0>
+2025-07-07 20:46:17 - __main__ - DEBUG - [usuario_DAO.py:19]- Seleccionando usuarios
+2025-07-07 20:46:17 - root - DEBUG - [cursor_del_pool.py:16]- Se ejecuta metodo __exit__
+2025-07-07 20:46:17 - root - ERROR - [cursor_del_pool.py:19]- Ocurrio una excepcion, se hace rollback: cannot access local variable 'usuario' where it is not associated with a value <class 'UnboundLocalError'> <traceback object at 0x00000208739B4980>
+2025-07-07 20:46:17 - root - DEBUG - [conexion.py:27]- Pool de conexiones ya creado: id=2235321545360
+2025-07-07 20:46:17 - root - DEBUG - [conexion.py:39]- Regresamos la conexion al pool: id=2235321606176
+2025-07-07 20:47:06 - root - DEBUG - [cursor_del_pool.py:10]- Inicio del metodo with __enter__
+2025-07-07 20:47:06 - root - DEBUG - [conexion.py:21]- Pool de conexiones creado: id=1603645495632
+2025-07-07 20:47:06 - root - DEBUG - [conexion.py:22]- Creación del Pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000017560B85950>
+2025-07-07 20:47:06 - root - DEBUG - [conexion.py:33]- Conexión obtenida del pool: <connection object at 0x0000017560C2E020; dsn: 'user=postgres password=xxx dbname=postgres host=127.0.0.1 port=5432', closed: 0>
+2025-07-07 20:47:06 - __main__ - DEBUG - [usuario_DAO.py:19]- Seleccionando usuarios
+2025-07-07 20:47:06 - root - DEBUG - [cursor_del_pool.py:16]- Se ejecuta metodo __exit__
+2025-07-07 20:47:06 - root - DEBUG - [cursor_del_pool.py:22]- Commit de la transaccion
+2025-07-07 20:47:06 - root - DEBUG - [conexion.py:27]- Pool de conexiones ya creado: id=1603645495632
+2025-07-07 20:47:06 - root - DEBUG - [conexion.py:39]- Regresamos la conexion al pool: id=1603646185504
+2025-07-07 20:48:17 - root - DEBUG - [cursor_del_pool.py:10]- Inicio del metodo with __enter__
+2025-07-07 20:48:18 - root - DEBUG - [conexion.py:21]- Pool de conexiones creado: id=1435178195408
+2025-07-07 20:48:18 - root - DEBUG - [conexion.py:22]- Creación del Pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000014E274959D0>
+2025-07-07 20:48:18 - root - DEBUG - [conexion.py:33]- Conexión obtenida del pool: <connection object at 0x0000014E2751E020; dsn: 'user=postgres password=xxx dbname=postgres host=127.0.0.1 port=5432', closed: 0>
+2025-07-07 20:48:18 - __main__ - DEBUG - [usuario_DAO.py:19]- Seleccionando usuarios
+2025-07-07 20:48:18 - __main__ - DEBUG - [usuario_DAO.py:26]- Usuarios: [<usuario.Usuario object at 0x0000014E27604B10>]
+2025-07-07 20:48:18 - __main__ - DEBUG - [usuario_DAO.py:26]- Usuarios: [<usuario.Usuario object at 0x0000014E27604B10>, <usuario.Usuario object at 0x0000014E27604B50>]
+2025-07-07 20:48:18 - root - DEBUG - [cursor_del_pool.py:16]- Se ejecuta metodo __exit__
+2025-07-07 20:48:18 - root - DEBUG - [cursor_del_pool.py:22]- Commit de la transaccion
+2025-07-07 20:48:18 - root - DEBUG - [conexion.py:27]- Pool de conexiones ya creado: id=1435178195408
+2025-07-07 20:48:18 - root - DEBUG - [conexion.py:39]- Regresamos la conexion al pool: id=1435178754080
+2025-07-07 20:48:43 - root - DEBUG - [cursor_del_pool.py:10]- Inicio del metodo with __enter__
+2025-07-07 20:48:43 - root - DEBUG - [conexion.py:21]- Pool de conexiones creado: id=2227007150416
+2025-07-07 20:48:43 - root - DEBUG - [conexion.py:22]- Creación del Pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000020683F85950>
+2025-07-07 20:48:43 - root - DEBUG - [conexion.py:33]- Conexión obtenida del pool: <connection object at 0x000002068405E020; dsn: 'user=postgres password=xxx dbname=postgres host=127.0.0.1 port=5432', closed: 0>
+2025-07-07 20:48:43 - __main__ - DEBUG - [usuario_DAO.py:19]- Seleccionando usuarios
+2025-07-07 20:48:43 - __main__ - DEBUG - [usuario_DAO.py:25]- Usuario recuperado: ID: 1, Username: siname, Password: 87654
+2025-07-07 20:48:43 - __main__ - DEBUG - [usuario_DAO.py:25]- Usuario recuperado: ID: 2, Username: admin1, Password: 12456
+2025-07-07 20:48:43 - root - DEBUG - [cursor_del_pool.py:16]- Se ejecuta metodo __exit__
+2025-07-07 20:48:43 - root - DEBUG - [cursor_del_pool.py:22]- Commit de la transaccion
+2025-07-07 20:48:43 - root - DEBUG - [conexion.py:27]- Pool de conexiones ya creado: id=2227007150416
+2025-07-07 20:48:43 - root - DEBUG - [conexion.py:39]- Regresamos la conexion al pool: id=2227008036896
+2025-07-07 20:54:30 - root - INFO - [menu_app_usuario.py:19]- ID: 1, Username: siname, Password: 87654
+2025-07-07 20:54:30 - root - INFO - [menu_app_usuario.py:19]- ID: 2, Username: admin1, Password: 12456
+2025-07-07 20:55:09 - root - INFO - [menu_app_usuario.py:19]- ID: 1, Username: siname, Password: 87654
+2025-07-07 20:55:09 - root - INFO - [menu_app_usuario.py:19]- ID: 2, Username: admin1, Password: 12456
+2025-07-07 20:57:10 - root - INFO - [menu_app_usuario.py:19]- ID: 1, Username: siname, Password: 87654
+2025-07-07 20:57:10 - root - INFO - [menu_app_usuario.py:19]- ID: 2, Username: admin1, Password: 12456
+2025-07-07 20:57:16 - root - INFO - [menu_app_usuario.py:19]- ID: 1, Username: siname, Password: 87654
+2025-07-07 20:57:16 - root - INFO - [menu_app_usuario.py:19]- ID: 2, Username: admin1, Password: 12456
+2025-07-07 21:07:23 - root - INFO - [menu_app_usuario.py:19]- ID: 1, Username: siname, Password: 87654
+2025-07-07 21:07:23 - root - INFO - [menu_app_usuario.py:19]- ID: 2, Username: admin1, Password: 12456
+2025-07-07 21:07:45 - root - INFO - [menu_app_usuario.py:26]- Usuarios insertados: 1
+2025-07-07 21:08:06 - root - INFO - [menu_app_usuario.py:19]- ID: 1, Username: siname, Password: 87654
+2025-07-07 21:08:06 - root - INFO - [menu_app_usuario.py:19]- ID: 2, Username: admin1, Password: 12456
+2025-07-07 21:08:06 - root - INFO - [menu_app_usuario.py:19]- ID: 3, Username: mlara, Password: 567
+2025-07-07 21:08:27 - root - INFO - [menu_app_usuario.py:19]- ID: 1, Username: siname, Password: 87654
+2025-07-07 21:08:27 - root - INFO - [menu_app_usuario.py:19]- ID: 2, Username: admin1, Password: 12456
+2025-07-07 21:08:27 - root - INFO - [menu_app_usuario.py:19]- ID: 3, Username: mlara, Password: 567
+2025-07-07 21:09:36 - root - INFO - [menu_app_usuario.py:34]- Usuarios actualizados: 1
+2025-07-07 21:09:40 - root - INFO - [menu_app_usuario.py:19]- ID: 1, Username: siname, Password: 87654
+2025-07-07 21:09:40 - root - INFO - [menu_app_usuario.py:19]- ID: 2, Username: admin1, Password: 12456
+2025-07-07 21:09:40 - root - INFO - [menu_app_usuario.py:19]- ID: 3, Username: laravel, Password: 98765
+2025-07-07 21:09:56 - root - INFO - [menu_app_usuario.py:26]- Usuarios insertados: 1
+2025-07-07 21:09:59 - root - INFO - [menu_app_usuario.py:19]- ID: 1, Username: siname, Password: 87654
+2025-07-07 21:09:59 - root - INFO - [menu_app_usuario.py:19]- ID: 2, Username: admin1, Password: 12456
+2025-07-07 21:09:59 - root - INFO - [menu_app_usuario.py:19]- ID: 3, Username: laravel, Password: 98765
+2025-07-07 21:09:59 - root - INFO - [menu_app_usuario.py:19]- ID: 4, Username: carlangas, Password: 777777
+2025-07-07 21:10:16 - root - INFO - [menu_app_usuario.py:40]- Usuarios eliminados: 1
+2025-07-07 21:10:18 - root - INFO - [menu_app_usuario.py:19]- ID: 1, Username: siname, Password: 87654
+2025-07-07 21:10:18 - root - INFO - [menu_app_usuario.py:19]- ID: 2, Username: admin1, Password: 12456
+2025-07-07 21:10:18 - root - INFO - [menu_app_usuario.py:19]- ID: 3, Username: laravel, Password: 98765

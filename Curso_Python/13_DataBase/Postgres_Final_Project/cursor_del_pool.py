@@ -8,7 +8,7 @@ class CursorDelPool:
     
     def __enter__(self):
         log.debug('Inicio del metodo with __enter__')
-        self._conexion = Conexion.obtener_conexion()
+        self._conexion = Conexion.obtenerConexion()
         self._cursor = self._conexion.cursor()
         return self._cursor
     
@@ -21,10 +21,10 @@ class CursorDelPool:
             self._conexion.commit()
             log.debug('Commit de la transaccion')
         self._cursor.close()
-        Conexion.liberar_conexion(self._conexion)
+        Conexion.liberarConexion(self._conexion)
 
 if __name__ == '__main__':
     with CursorDelPool() as cursor:
         log.debug('Dentro del bloque with')
-        cursor.execute('SELECT * FROM persona')
+        cursor.execute('SELECT * FROM persona order by id_persona')
         log.debug(cursor.fetchall())

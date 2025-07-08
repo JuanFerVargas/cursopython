@@ -7,7 +7,7 @@ os.makedirs(log_dir, exist_ok=True)
 log_file = os.path.join(log_dir, 'capa_datos_persona.log')
 
 log.basicConfig(
-                level=log.DEBUG,
+                level=log.INFO,
                 format='%(asctime)s - %(name)s - %(levelname)s - [%(filename)s:%(lineno)s]- %(message)s',
                 datefmt='%Y-%m-%d %H:%M:%S',
                 handlers=[
