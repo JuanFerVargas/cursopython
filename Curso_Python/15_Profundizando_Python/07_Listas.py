@@ -74,7 +74,7 @@ print(f'Lista de caracteres: {nombres1}')
 # Ordenar de forma descendente
 nombres1 = ['juan', 'pedro', 'maria']
 nombres1=sorted(nombres1,reverse=True)
-print(f'Lista de caracteres: {nombres1}')
+print(f'Lista de caracteres ordenada de forma descendente: {nombres1}')
 
 # Ordenar por longitud de caracteres
 nombres1 = ['juan', 'pedro', 'maria del pilar']
@@ -83,5 +83,4 @@ print(f'Lista de caracteres ordenada por longitud: {nombres1}')
 
 # Build-in reversed
 nombres1 = reversed(nombres1)
-print(f'Lista de caracteres invertida: {list(nombres1)}')
-
+print(f'Lista de caracteres invertida: {tuple(nombres1)}')
