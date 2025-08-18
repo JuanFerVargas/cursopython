@@ -31,3 +31,24 @@ print(f'Unzip letras {letras_unzip}')
 print(f'Unzip identificadores {indentificadores_unzip}')
 print(f'Unzip conjuntos {conjuntos_unzip}')
 
+# Ordenamiento usando zip
+letras = ['d', 'c', 'f', 'a']
+numeros = [10, 2, 13, 54]
+mezcla = zip(letras, numeros)
+# Sin orden
+print(list(mezcla))
+# Ordenado por letra (Primer iterable)
+print(sorted(zip(letras,numeros)))   
+
+# Crear un diccionario con zip y dos iterables
+llaves=['Nombre','Apellido','Edad']
+valores=['Juan','Perez',18]
+diccionario = dict(zip(llaves, valores))
+print(diccionario)
+
+# Actualizar un elemento del diccionario
+llave = ['Edad']
+nueva_edad = [28]
+diccionario.update(zip(llave,nueva_edad))
+print(diccionario)
+
